@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Priya ❤️</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3,#ffd1dc);
+    min-height:100vh;
+    overflow-x:hidden;
+    color:#fff;
+}
+/* Floating Hearts */
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:22px;
+    animation:float 7s linear infinite;
+    opacity:.8;
+    z-index:0;
+}
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+    20%{opacity:1;}
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+/* Main */
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    padding:25px 15px 50px;
+    position:relative;
+    z-index:2;
+}
+/* Opening */
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.hero .cake{
+    font-size:80px;
+    animation:bounce 1.5s infinite;
+}
+@keyframes bounce{
+    50%{transform:translateY(-15px);}
+}
+.hero h1{
+    font-size:42px;
+    margin-top:15px;
+    text-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+.hero h2{
+    font-size:25px;
+    margin-top:10px;
+    font-weight:400;
+}
+.hero p{
+    margin-top:15px;
+    font-size:17px;
+}
+.btn{
+    margin-top:30px;
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    background:#fff;
+    color:#ff4f81;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+    transition:.3s;
+}
+.btn:hover{
+    transform:scale(1.08);
+}
+/* Letter */
+.letter-section{
+    display:none;
+    animation:appear 1s ease;
+}
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.card{
+    background:rgba(255,255,255,.94);
+    color:#5b2637;
+    border-radius:25px;
+    padding:30px;
+    margin:25px 0;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+.card h2{
+    color:#ff477e;
+    text-align:center;
+    margin-bottom:20px;
+}
+.card p{
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:14px;
+}
+/* Love letter */
+.letter{
+    background:#fffaf5;
+    border:2px solid #ffc1d1;
+    position:relative;
+}
+.letter::before{
+    content:"💌";
+    position:absolute;
+    top:-25px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:45px;
+}
+.signature{
+    text-align:right;
+    margin-top:25px;
+    font-size:18px;
+    font-weight:bold;
+    color:#ff477e;
+}
+/* Photos */
+.photos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+.photo{
+    height:220px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#ffd6e2,#fff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#ff477e;
+    font-weight:bold;
+    overflow:hidden;
+}
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+/* Surprise */
+.surprise{
+    text-align:center;
+}
+.hidden-message{
+    display:none;
+    margin-top:25px;
+    background:#fff;
+    color:#ff477e;
+    padding:25px;
+    border-radius:20px;
+    animation:appear .8s ease;
+}
+.hidden-message h3{
+    font-size:28px;
+    margin-bottom:12px;
+}
+.hidden-message p{
+    color:#6b3545;
+    line-height:1.7;
+}
+/* Final */
+.final{
+    text-align:center;
+    padding:40px 10px;
+}
+.final h2{
+    font-size:30px;
+}
+.final p{
+    margin-top:12px;
+    font-size:16px;
+}
+/* Mobile */
+@media(max-width:600px){
+    .hero h1{
+        font-size:32px;
+    }
+    .hero h2{
+        font-size:21px;
+    }
+    .card{
+        padding:22px;
+    }
+    .photos{
+        grid-template-columns:1fr;
+    }
+    .photo{
+        height:280px;
+    }
+}
+</style>
+</head>
+<body>
+<!-- Floating Hearts -->
+<div class="heart" style="left:5%;animation-delay:0s;">❤️</div>
+<div class="heart" style="left:18%;animation-delay:2s;">💗</div>
+<div class="heart" style="left:35%;animation-delay:4s;">💕</div>
+<div class="heart" style="left:55%;animation-delay:1s;">❤️</div>
+<div class="heart" style="left:72%;animation-delay:3s;">💖</div>
+<div class="heart" style="left:90%;animation-delay:5s;">💗</div>
+<div class="container">
+    <!-- Opening Screen -->
+    <section class="hero" id="hero">
+        <div class="cake">🎂</div>
+        <h1>Happy Birthday, Priya ❤️</h1>
+        <h2>My Favourite Person & My Cute Suwar 🐷💕</h2>
+        <p>
+            Aaj ka din mere liye bhi special hai...
+            kyunki aaj meri favourite person ka birthday hai. 🥹❤️
+        </p>
+        <button class="btn" onclick="openSurprise()">
+            💝 Open Your Surprise
+        </button>
+    </section>
+    <!-- Birthday Content -->
+    <section class="letter-section" id="surprise">
+        <div class="card">
+            <h2>🎉 Happy 19th October 🎉</h2>
+            <p style="text-align:center;">
+                <b>Dear Priya ❤️</b>
+            </p>
+            <p style="text-align:center;">
+                Today is not just your birthday...
+                today is the day my favourite person came into this world. 🥹 emoji
+laga deta hu aise emotional laguga
+            </p>
+        </div>
+        <!-- Love Letter -->
+        <div class="card letter">
+            <h2>💌 A Little Letter For You</h2>
+            <p>
+                Dear Priya urf suwar ,
+            </p>
+            <p>
+                Pata nahi main words mein exactly explain kar paunga ya nahi,
+                but you are genuinely one of the most special people in my life.
+                ❤️
+            </p>
+            <p>
+                Tumhari smile, tumhari cute si baatein, tumhara gussa,
+                aur tumhara woh pagalpan... sab kuch mujhe bahut pasand hai.
+                😭❤️
+            </p>
+            <p>
+                Kabhi kabhi hum ladte hain, kabhi ek dusre ko irritate karte hain,
+                aur kabhi bina kisi reason ke hasi-mazaak karte hain.
+                But honestly, in sab moments ko main dil se cherish karta hoon.
+            </p>
+            <p>
+                Main bas itna chahta hoon ki tum hamesha khush raho,
+                apne dreams achieve karo aur life mein bahut aage jao.
+                ✨
+            </p>
+            <p>
+                Aur haan... meri cute si <b>Suwar 🐷</b>,
+                birthday ke din bhi zyada attitude mat dikhana. 😂❤️
+            </p>
+            <p>
+                Thank you for being you.
+                Thank you for all the little moments,
+                conversations and memories.
+            </p>
+            <p>
+                I may not always say it perfectly,
+                but you really mean a lot to me.
+                ❤️
+            </p>
+            <p>
+                Once again...
+                <br>
+                <b>Happy Birthday, Priya! 🎂🎀</b>
+            </p>
+            <div class="signature">
+                Always yours ❤️<br>
+                — Saurabh
+            </div>
+        </div>
+        <!-- Photos -->
+        <div class="card">
+            <h2>📸 Our Little Memories</h2>
+            <div class="photos">
+                <!-- Apni photos yahan lagana -->
+                <div class="photo">
+                    <img src="C:\Users\soura\Downloads\WhatsApp Image 2026-10-11 at 10.26.20 PM.jpeg" alt="Our Memory">
+                </div>
+                <div class="photo">
+                    <img src="C:\Users\soura\Pictures\Camera Roll\WhatsApp Image 2026-10-18 at 10.32.35 AM.jpeg" alt="Our Memory">
+                </div>
+                <div class="photo">
+                    <img src="C:\Users\soura\Pictures\Screenshots\Screenshot 2026-04-25 001758.png" alt="Our Memory">
+                </div>
+                <div class="photo">
+                    <img src="C:\Users\soura\Pictures\Camera Roll\WhatsApp Image 2026-10-18 at 10.32.34 AM (2).jpeg" alt="Our Memory">
+                </div>
+                      <div class="photo">
+                    <img src="C:\Users\soura\Pictures\Camera Roll\WhatsApp Image 2026-10-18 at 10.32.35 AM (1).jpeg" alt="Our Memory">
+                </div>
+      <div class="photo">
+                    <img src="C:\Users\soura\Pictures\Screenshots\WhatsApp Image 2026-05-07 at 11.06.23 AM.jpeg" alt="Our Memory">
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Surprise Button -->
+        <div class="card surprise">
+            <h2>🎁 One More Surprise</h2>
+            <p>
+                Tumhe laga surprise khatam ho gaya? 😏
+            </p>
+            <button class="btn" onclick="showMessage()">
+                ❤️ Click Here
+            </button>
+            <div class="hidden-message" id="secret">
+                <h3>I Love You bacha , Priya ❤️</h3>
+                <p>
+                    No matter how many birthdays come and go,
+                    I hope I get to celebrate many more of them with you. 🥹
+                </p>
+                <p>
+                    Keep smiling, keep shining,
+                    and please never stop being the crazy,
+                    cute and adorable person you are. 💕 
+                    at the last ye life teri hai ,
+                    har kishi ke liye roya mat karo .
+                    cha or mai rahu ya tere family ;.
+                    broh you are so heavy on the earth 
+                </p>
+                <p>
+                    <b>Happy Birthday once again, meri Suwar! 🐷🎂❤️</b>
+                </p>
+            </div>
+        </div>
+        <!-- Final -->
+        <div class="final">
+            <h2>🎂 Happy Birthday Priya ❤️</h2>
+            <p>
+                Made with lots of love, memories & a little bit of coding. 💻❤️
+            </p>
+            <p>
+                <b>19 October 💕</b>
+            </p>
+        </div>
+    </section>
+</div>
+<script>
+function openSurprise(){
+    document.getElementById("hero").style.display = "none";
+    document.getElementById("surprise").style.display = "block";
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+function showMessage(){
+    document.getElementById("secret").style.display = "block";
+    createHearts();
+}
+function createHearts(){
+    for(let i=0;i<25;i++){
+        let heart=document.createElement("div");
+        heart.innerHTML=["❤️","💗","💕","💖","💘"][Math.floor(Math.random()*5)];
+        heart.style.position="fixed";
+        heart.style.left=Math.random()*100+"%";
+        heart.style.bottom="-30px";
+        heart.style.fontSize=(15+Math.random()*25)+"px";
+        heart.style.zIndex="10";
+        heart.style.animation="float "+(3+Math.random()*4)+"s linear";
+        document.body.appendChild(heart);
+        setTimeout(()=>{
+            heart.remove();
+        },7000);
+    }
+}
+</script>
+</body>
+</html>
